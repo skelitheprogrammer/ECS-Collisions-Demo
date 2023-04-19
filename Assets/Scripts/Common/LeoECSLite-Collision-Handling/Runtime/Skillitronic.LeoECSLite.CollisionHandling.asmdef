@@ -1,0 +1,19 @@
+{
+    "name": "Skillitronic.LeoECSLite.CollisionHandling",
+    "rootNamespace": "Skillitronic.LeoECSLite.CollisionHandling",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:7c26a3994c5313a4683080ee3f41e0dd",
+        "GUID:7d2c4695fbe07484fbb83777f76f7e80",
+        "GUID:c025eb2f93f3db44a9453148313b381d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
