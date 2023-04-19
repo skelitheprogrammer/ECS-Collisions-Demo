@@ -1,6 +1,7 @@
 ﻿using Leopotam.EcsLite;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
 using Skillitronic.LeoECSLite.GameObjectResourceManager;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime;
 
 namespace Content.Player.PlayerSpawn.Systems
 {

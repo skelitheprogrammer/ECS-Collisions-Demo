@@ -1,13 +1,13 @@
 ﻿using Leopotam.EcsLite;
 using UnityEngine;
 
-namespace Common.Utils.Systems
+namespace Common.TimeService
 {
     public class TimeServiceSystem : IEcsRunSystem
     {
-        private readonly TimeService.TimeService _timeService;
+        private readonly Common.TimeService.TimeService _timeService;
 
-        public TimeServiceSystem(TimeService.TimeService timeService)
+        public TimeServiceSystem(Common.TimeService.TimeService timeService)
         {
             _timeService = timeService;
         }

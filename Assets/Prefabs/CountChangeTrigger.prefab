@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 996314850141197018}
-  - component: {fileID: -5166888063990798260}
   - component: {fileID: -5151305402637727440}
   - component: {fileID: 5774893846862263090}
   - component: {fileID: 4232040466815336913}
   - component: {fileID: 1500038630679663693}
   - component: {fileID: 5870464618783753953}
   - component: {fileID: 8259956679811098586}
+  - component: {fileID: 2032974243018906102}
   m_Layer: 0
   m_Name: CountChangeTrigger
   m_TagString: Untagged
@@ -39,19 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5166888063990798260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224483181483541172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b3abca0d85a5c40b1d0183d4711a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Entity: -999
 --- !u!114 &-5151305402637727440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +148,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 8348281050829733861}
+--- !u!114 &2032974243018906102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224483181483541172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cce07b704544b45965ce081006d34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Entity: -999
 --- !u!1 &5692640300937714143
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Factory
+namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Factory
 {
     public sealed class GameObjectFactory : IGameObjectFactory
     {

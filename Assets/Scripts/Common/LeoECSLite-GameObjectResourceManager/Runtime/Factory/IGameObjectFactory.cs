@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Factory
+namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Factory
 {
     public interface IGameObjectFactory
     { 

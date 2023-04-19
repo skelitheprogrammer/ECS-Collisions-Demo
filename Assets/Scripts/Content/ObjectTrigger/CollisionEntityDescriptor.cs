@@ -3,7 +3,7 @@ using Skillitronic.LeoECSLite.Common;
 using Skillitronic.LeoECSLite.EntityDescriptors;
 using Skillitronic.LeoECSLite.EntityDescriptors.ComponentProviders;
 
-namespace Skillitronic.LeoECSLite.CollisionHandling.ObjectTrigger
+namespace Content.ObjectTrigger
 {
     public class CollisionEntityDescriptor : IEntityDescriptor
     {

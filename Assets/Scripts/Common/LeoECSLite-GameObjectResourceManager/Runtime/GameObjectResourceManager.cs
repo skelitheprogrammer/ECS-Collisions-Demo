@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Skillitronic.LeoECSLite.GameObjectResourceManager.Factory;
-using Skillitronic.LeoECSLite.GameObjectResourceManager.Pool;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Factory;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Pool;
 using UnityEngine;
 
-namespace Skillitronic.LeoECSLite.GameObjectResourceManager
+namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime
 {
     public sealed class GameObjectResourceManager : IDisposable
     {

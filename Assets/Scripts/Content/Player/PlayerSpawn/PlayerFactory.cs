@@ -5,6 +5,7 @@ using Skillitronic.LeoECSLite.Common;
 using Skillitronic.LeoECSLite.EntityDescriptors;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
 using Skillitronic.LeoECSLite.GameObjectResourceManager;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 

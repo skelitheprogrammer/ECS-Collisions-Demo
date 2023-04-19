@@ -23,12 +23,31 @@
       "dependencies": {},
       "hash": "65affd1090e235d8441582903dd95f7e86587849"
     },
+    "com.skillitronic.leoecscommon": {
+      "version": "https://github.com/skelitheprogrammer/Skillitronic-LeoECSLite-Common.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.leopotam.ecslite": "2023.3.22"
+      },
+      "hash": "d6e88b85805a76a0982e48d97aa5c35e3c90f9ce"
+    },
     "com.skillitronic.leoecsentitydescriptors": {
       "version": "https://github.com/skelitheprogrammer/LeoECSLite-Entity-Descriptors.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "f7cf5937b2b6639849cac66ef7c0c363a8cb0d1f"
+    },
+    "com.skillitronic.leoecslite.physics.collisions": {
+      "version": "https://github.com/skelitheprogrammer/LeoECSLite-Physics-Collisions.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.leopotam.ecslite": "2023.3.22",
+        "com.skillitronic.leoecscommon": "0.0.1"
+      },
+      "hash": "c355c54f135f2b702cb5229ed89b090c4f823cf6"
     },
     "com.skillitronic.leoecssystemgroups": {
       "version": "https://github.com/skelitheprogrammer/LeoECSLite-EcsSystemGroups.git",

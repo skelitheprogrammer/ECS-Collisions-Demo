@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Pool
+namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Pool
 {
     internal sealed class GameObjectPool : IDisposable
     {

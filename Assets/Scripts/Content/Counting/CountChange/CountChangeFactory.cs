@@ -5,9 +5,12 @@ using Content.Counting.CountChange.UI;
 using Content.Counting.CountChange.UI.Components;
 using Content.Counting.CountChange.UI.View;
 using Leopotam.EcsLite;
+using Skillitronic.LeoECSLite.CollisionHandling;
+using Skillitronic.LeoECSLite.CollisionHandling.Behaviour;
 using Skillitronic.LeoECSLite.Common;
 using Skillitronic.LeoECSLite.EntityDescriptors;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
+using UnityEngine;
 
 namespace Content.Counting.CountChange
 {
@@ -45,12 +48,7 @@ namespace Content.Counting.CountChange
         {
             EntityInitializer changeInit = _entityFactory.Create<CountChangeEntityDescriptor>(world);
             countChangeBehaviour.GetComponent<EntityReferenceHolder>().Entity = changeInit.Entity;
-
-            changeInit.InitComponent(new PositionComponent
-            {
-                Position = countChangeBehaviour.transform.position,
-            });
-
+            
             changeInit.InitComponent(new CountChangeData
             {
                 Amount = countChangeBehaviour.Amount,

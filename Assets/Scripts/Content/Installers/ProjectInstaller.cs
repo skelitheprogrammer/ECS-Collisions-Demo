@@ -1,6 +1,5 @@
 using Common.Input;
 using Common.TimeService;
-using Common.Utils.Systems;
 using Content.Counting;
 using Content.Input;
 using Content.Player;
@@ -8,13 +7,12 @@ using Content.Sync;
 using Leopotam.EcsLite;
 using Leopotam.EcsLite.UnityEditor;
 using Reflex.Core;
-using Skillitronic.LeoECSLite.CollisionHandling.Components;
-using Skillitronic.LeoECSLite.CollisionHandling.Sync;
-using Skillitronic.LeoECSLite.Common;
+using Skillitronic.LeoECSLite.CollisionHandling;
 using Skillitronic.LeoECSLite.EcsSystemGroups;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
 using Skillitronic.LeoECSLite.GameObjectResourceManager;
-using Skillitronic.LeoECSLite.GameObjectResourceManager.Factory;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime;
+using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Factory;
 using UnityEngine;
 
 namespace Content.Installers
@@ -36,14 +34,13 @@ namespace Content.Installers
             IDescriptorEntityFactory descriptorEntityFactory = new DescriptorEntityFactory();
             IGameObjectFactory gameObjectFactory = new GameObjectFactory();
             GameObjectResourceManager gameObjectResourceManager = new(gameObjectFactory);
-            
-            world.Filter<CollisionComponent>().Inc<GameObjectReferenceComponent>().End().AddEventListener(new SyncCollisionListener(world));
-            
+
             systems
                 .Add(new TimeServiceSystem(timeService))
                 .Add(new GameplayInputInitSystem(gameplayActionsRegistrar))
                 .AddGroup(new PlayerModule(timeService, _playerData, descriptorEntityFactory, gameObjectResourceManager))
                 .AddGroup(new CountingModule(descriptorEntityFactory))
+                .Add(new CollisionSyncSystem())
                 .AddGroup(new SyncModule())
 #if UNITY_EDITOR
                 .Add(new EcsWorldDebugSystem())

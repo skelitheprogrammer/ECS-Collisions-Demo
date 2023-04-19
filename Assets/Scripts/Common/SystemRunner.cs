@@ -2,23 +2,26 @@ using Leopotam.EcsLite;
 using Reflex.Attributes;
 using UnityEngine;
 
-public class SystemRunner : MonoBehaviour
+namespace Common
 {
-    private IEcsSystems _systems;
-    
-    [Inject]
-    private void Inject(IEcsSystems systems)
+    public class SystemRunner : MonoBehaviour
     {
-        _systems = systems;
-    }
+        private IEcsSystems _systems;
     
-    void Start()
-    {
-        _systems.Init();
-    }
+        [Inject]
+        private void Inject(IEcsSystems systems)
+        {
+            _systems = systems;
+        }
     
-    void Update()
-    {
-        _systems.Run();
+        void Start()
+        {
+            _systems.Init();
+        }
+    
+        void Update()
+        {
+            _systems.Run();
+        }
     }
 }

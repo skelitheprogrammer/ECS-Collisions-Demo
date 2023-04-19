@@ -3,7 +3,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceLocations;
 
-namespace Skillitronic.LeoECSLite.GameObjectResourceManager
+namespace Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime
 {
     public static class AddressablesUtility
     {
