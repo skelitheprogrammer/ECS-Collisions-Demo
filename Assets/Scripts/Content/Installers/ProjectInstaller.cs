@@ -5,12 +5,10 @@ using Content.Input;
 using Content.Player;
 using Content.Sync;
 using Leopotam.EcsLite;
-using Leopotam.EcsLite.UnityEditor;
 using Reflex.Core;
 using Skillitronic.LeoECSLite.CollisionHandling;
 using Skillitronic.LeoECSLite.EcsSystemGroups;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
-using Skillitronic.LeoECSLite.GameObjectResourceManager;
 using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime;
 using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime.Factory;
 using UnityEngine;
@@ -43,7 +41,7 @@ namespace Content.Installers
                 .Add(new CollisionSyncSystem())
                 .AddGroup(new SyncModule())
 #if UNITY_EDITOR
-                .Add(new EcsWorldDebugSystem())
+                .Add(new Leopotam.EcsLite.UnityEditor.EcsWorldDebugSystem())
 #endif
                 ;
 

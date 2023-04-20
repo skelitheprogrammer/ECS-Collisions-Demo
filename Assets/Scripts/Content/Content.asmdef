@@ -1,0 +1,26 @@
+{
+    "name": "Content",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163",
+        "GUID:9819da74b6761bf4bb3e5abfe7cb917a",
+        "GUID:7c26a3994c5313a4683080ee3f41e0dd",
+        "GUID:1c65b77010850394884a0d0d3ed8c605",
+        "GUID:50d6cea917552a048a33490deaff5bd4",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:1530a967b84cfb44dbdd5e8a1989764f",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:43ba0df214257774a9a93fb162f87cf0",
+        "GUID:7d2c4695fbe07484fbb83777f76f7e80",
+        "GUID:a22362b82293644e1bbe51356c008d63"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

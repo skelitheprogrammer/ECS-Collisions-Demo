@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1500038630679663693}
   - component: {fileID: 5870464618783753953}
   - component: {fileID: 8259956679811098586}
-  - component: {fileID: 2032974243018906102}
+  - component: {fileID: 5325866732590099196}
   m_Layer: 0
   m_Name: CountChangeTrigger
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_Children:
   - {fileID: 2379224702138610636}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-5151305402637727440
 MonoBehaviour:
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 8348281050829733861}
---- !u!114 &2032974243018906102
+--- !u!114 &5325866732590099196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,6 +218,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
