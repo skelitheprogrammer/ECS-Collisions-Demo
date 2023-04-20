@@ -1,13 +1,11 @@
 {
   "dependencies": {
     "com.gustavopsantos.reflex": {
-      "version": "https://github.com/gustavopsantos/reflex.git?path=/Assets/Reflex/#4.0.0",
+      "version": "https://github.com/gustavopsantos/reflex.git?path=/Assets/Reflex/#4.1.0",
       "depth": 0,
       "source": "git",
-      "dependencies": {
-        "com.unity.nuget.mono-cecil": "1.11.4"
-      },
-      "hash": "a6d7b5ae99f47fd0bfc7fbc9641c653a4b9aced5"
+      "dependencies": {},
+      "hash": "37529b8e92c59a4255f72f5292960190b75a37d0"
     },
     "com.leopotam.ecslite": {
       "version": "https://github.com/Leopotam/ecslite.git",
@@ -135,13 +133,6 @@
     },
     "com.unity.mathematics": {
       "version": "1.2.6",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.nuget.mono-cecil": {
-      "version": "1.11.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {},

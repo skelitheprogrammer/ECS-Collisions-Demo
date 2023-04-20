@@ -4,7 +4,6 @@ using Leopotam.EcsLite;
 using Skillitronic.LeoECSLite.Common;
 using Skillitronic.LeoECSLite.EntityDescriptors;
 using Skillitronic.LeoECSLite.EntityDescriptors.Factory;
-using Skillitronic.LeoECSLite.GameObjectResourceManager;
 using Skillitronic.LeoECSLite.GameObjectResourceManager.Common.Runtime;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -57,7 +56,7 @@ namespace Content.Player.PlayerSpawn
 
             async Task<GameObject> CreatePlayerModel(AssetReference reference)
             {
-                GameObject gameObject = await _resourceManager.Build(reference.GetAddressFromAssetReference());
+                GameObject gameObject = await _resourceManager.Build(await reference.GetAddressFromAssetReference());
                 gameObject.transform.SetPositionAndRotation(position, rotation);
 
                 return gameObject;
